@@ -3,7 +3,7 @@ class PlayersController < ApplicationController
   skip_before_filter :verify_authenticity_token
 
   def index
-    render json: Player.all.order("total DESC")
+    render json: Player.all.order("ppg DESC")
   end
 
   def show
