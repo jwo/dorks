@@ -1,5 +1,6 @@
 class PlayerSerializer < ActiveModel::Serializer
-  attributes :id, :position, :rank, :firstname, :lastname, :team, :total, :ppg, :full_name
+  attributes :id, :position, :rank, :firstname, :lastname, :team, :total,
+    :ppg, :full_name, :on_team, :available
 
   def full_name
     [object.firstname, object.lastname].join(" ")

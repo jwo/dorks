@@ -11,3 +11,4 @@ gem 'roo'
 gem 'active_model_serializers'
 gem 'puma'
 gem 'foreman', group: [:development, :test]
+gem 'rails-lineman'
